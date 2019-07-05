@@ -1,20 +1,16 @@
-# dokku-wkhtmltopdf
+# dokku-freetds
 
-dokku-wkhtmltopdf is an awesome plugin for [dokku][dokku] that properly installs the wkhtmltopdf into the docker instance.
-This plugin should fix the problems you may have when downloading wkhtmltopdf with ```apt-get``` for example by using another awesome plugin [dokku-apt][dokku-apt].
+dokku-freetds is an awesome plugin for [dokku][dokku] that properly installs the freetds into the docker instance.
+This plugin should fix the problems you may have when downloading freetds with ```apt-get``` for example by using another awesome plugin [dokku-apt][dokku-apt].
 
 ## Installation
 
 On your dokku server:
 ```sh
-# On 0.3.x
-git clone https://github.com/mbriskar/dokku-wkhtmltopdf /var/lib/dokku/plugins/dokku-wkhtmltopdf
-
-# On 0.4.x
-dokku plugin:install https://github.com/mbriskar/dokku-wkhtmltopdf.git wkhtmltopdf
+dokku plugin:install https://github.com/csenszike/dokku-freetds.git freetds
 ```
 
-All future deployments will have dokku-wkhtmltopdf installed.
+All future deployments will have dokku-freetds installed.
 
 ## License
 
