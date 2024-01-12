@@ -6,6 +6,7 @@ echo "-----> Installing freetds ..."
 COMMAND=$(cat <<EOF
 
 export DEBIAN_FRONTEND=noninteractive
+echo "deb http://apt-archive.postgresql.org/pub/repos/apt/ bionic-pgdg main" | tee -a /etc/apt/sources.list
 apt-get -y  update 
 apt-get install -y freetds-dev
 echo "-----> freetds installed!"
